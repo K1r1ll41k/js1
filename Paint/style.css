@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-color: rosybrown;
+    font-family: sans-serif;
+}
+.bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2aa598;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.colorBar {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-shadow: 0 0 2px #000 inset;
+    height: 56px;
+}
+.color {
+    width: 400px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+    padding: 0 5px;
+    box-shadow: 0 0 5px #000;
+    min-width: 25px;
+}
+.color:hover {
+    border-color: #000;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.btn {
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 5px 12px;
+    border: none;
+    box-shadow: 0 0 5px #000;
+    border-bottom: 1px solid #000;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #e5e4e4;
+    text-shadow: 2px 2px 2px #000;
+    transition: 0.5s;
+}
+.btn:hover {
+    text-shadow: 0 0 2px #e5e4e4;
+}
+.btn:active {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: none;
+    border-bottom-color: transparent;
+}
+.lineWeightBar {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-shadow: 0 0 2px #000 inset;
+    height: 56px;
+}
+.lineW {
+    width: 400px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 0 4px black inset;
+    border-radius: 15px;
+}
+.lineWeightValue {
+    margin-right: 20px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+    min-width: 65px;
+    text-align: center;
+}
+
+.cvs {
+    background-color: #fff;
+    padding: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: -10;
+}
+.status {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    margin: 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #fff;
+    color: #000;
+    font-weight: 700;
+}
+
+@media all and (max-width: 750px) {
+    .bar {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+    colorBar, .lineWeightBar {
+        width: 100%;
+    }
+    .lineWeightBar {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bar">
+        <div class="colorBar">
+            <input type="color" name="color" class="color" id="color">
+            <input type="button" value="Fill in" id="fill" class="btn">
+            <input type="button" value="Clear" id="clear" class="btn">
+        </div>
+        <div class="lineWeightBar">
+            <input type="range" id="lineW" value="10" min="1" max="100" step="1">
+            <span class="lineWeightValue" id="lineWeightValue">10</span>
+        </div>
+    </div>
+    
+    <canvas class="cvs" id="cvs"></canvas>
+    <div class="status">Kirilix_</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

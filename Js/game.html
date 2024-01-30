@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра!!!</title>
+</head>
+
+<body>
+    <script>
+        let randomValue = Math.floor(Math.random() * 100);
+        let attempt = 0;
+        alert("Я загадав випадкове значення від 1 до 100")
+
+        while (true) {
+            let currentValue = prompt("");
+            attempt++;
+
+            if (currentValue > randomValue) {
+                alert("Я загадав число менше ніж " + currentValue);
+            }
+            if (currentValue > randomValue) {
+                alert("Я загадав число більше ніж " + currentValue);
+            }
+
+            if(currentValue == randomValue) {
+                alert(`Правильно!!! Загадане число ${randomValue}. Ви вгадали з ${attempt}-ї спробию`);
+            }
+        }
+    </script>
+</body>
+
+</html>

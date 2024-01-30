@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(270deg, #2376ae, #c16ecf);
+    font-family: sans-serif;
+}
+.title,
+.menu {
+    margin: 20px auto;
+    border: 1px solid #000;
+}
+.title,
+.item {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: background 0.5s;
+    font-weight: 700;
+}
+.title {
+    width: 500px;
+    padding: 15px 0;
+    font-size: 30px;
+}
+.menu {
+    width: 250px;
+}
+.item {
+    font-size: 24px;
+    padding: 10px 0;
+}
+.title:hover,
+.title:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+/*task 5*/
+.battery-wrapper {
+    margin: 20px auto;
+    width: 200px;
+}
+.batterys {
+    height: 70px;
+    background-color: #fff;
+    border: 4px solid #000;
+    position: relative;
+    margin-bottom: 20px;
+}
+.batterys::before{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    width: 5px;
+    height: 20px;
+    top: calc(50% - 10px);
+    right: -9px;
+}
+.batterys::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.battery1::after {
+    background-color: red;
+    width: 30%
+}
+.battery2::after {
+    background-color: yellow;
+    width: 60%;
+}
+.battery3::after {
+    background-color: lime;
+    width: 100%;
+}
+

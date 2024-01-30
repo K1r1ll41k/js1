@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+/* Стилі для body */
+body {
+    background: rgb(233, 10, 10);
+    background: linear-gradient(90deg, rgba(144, 58, 180, 1) 10%, rgba(3, 244, 228, 1) 50%, rgba(148, 72, 167, 1) 88%);
+}
+
+/* Стилі для параграфів */
+p {
+    color: red;
+}
+
+.text2 {
+    color: orange;
+}
+
+table,
+td {
+    border: 1px solid rgb(189, 109, 39);
+}
+
+.tab {
+    font-family: sans-serif;
+    color: black;
+}
+
+.tab td {
+
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 50px;
+    transition: 0.5s;
+}
+
+.tab td:hover {
+    background-color: rgb(166, 0, 0);
+}
+
+.fblock {
+    color: rgb(221, 27, 27);
+    height: 300px;
+    font-size: 30px;
+    text-align-last: center;
+    padding-top: 135px;
+    width: 500px;
+    margin: 20px;
+}
+.box {
+    border-radius: 50%;
+    padding: 20px;
+    background-color: red;
+}
+.box1 {
+    width: 200px;
+    height: 200px;
+}
+.box2 {
+    width: 160px;
+    height: 160px;
+    background-color: #fff;
+}
+.box3 {
+    width: 120px;
+    height: 120px;
+}
+.box4 {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+}
+.box5 {
+    width: 40px;
+    height: 40px;
+}
+.block-wrapper {
+    margin: 20px 0;
+}
+.block {
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000;
+    position: relative;
+    text-align: center;
+}
+.block1 {
+    background-color: tomato;
+}
+.block2 {
+    background-color: lightgreen;
+    left: 100px;
+}
+.block3 {
+    background-color: royalblue;
+    left: 200px;
+}
+.block4 {
+    background-color: goldenrod;
+    left: 100px;
+}
+.block5 {
+    background-color: purple;
+}
+.menu-wrapper {
+    border: 2px solid #000;
+    margin: 20px 0;
+    width: 250px;
+}
+.menu-item {
+    color: #fff;
+    background-color: rgb(0,0,0, 0.2);
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.5s;
+    white-space: nowrap;
+    position: relative;
+}
+.menu-item:hover{
+    background-color:  rgb(0,0,0, 0.4);
+    letter-spacing: 2px;
+}
+.submenu{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 248px;
+    display: none;
+}
+.menu-item:hover .submenu{
+    display: block;
+}
+.fixed-block{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 15px #000;
+    border: 1px solid #000;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    background: linear-gradient(90deg, rgba(0,255,252,1) 0%, rgba(75,143,253,1) 50%, rgba(171,0,255,1) 100%);
+    text-decoration: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.fixed-block:hover{
+    box-shadow: 0 0 5px #000;
+    letter-spacing: 2px;
+}

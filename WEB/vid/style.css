@@ -1,0 +1,25 @@
+body{
+    background: url(https://wonder-day.com/wp-content/uploads/2020/03/Wonder-day-background-intro-gacha-1-1024x640.jpg);
+}
+.photo {
+    width: 300px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.photo:hover {
+    border-radius: 15px;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background: url(https://i.pinimg.com/236x/78/7c/6d/787c6dce3a4458eaa25628e72ab92474.jpg);
+    background-position: center;
+    transition: 0.5s;
+    background-size: 200px;
+}
+.box:hover{
+background-size: 50px;
+}
